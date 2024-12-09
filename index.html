@@ -4,7 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home Page</title>
   </head>
-  <body></body>
+  <body>
+    <div class="page-container">
+      <header>
+        <div class="header-general-container">
+          <div class="burger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </div>
+          <picture>
+            <source
+              media="(prefers-color-scheme: dark)"
+              srcset="assets/logo-white.png"
+            />
+            <img src="assets/logo-black.png" alt="Youtube logo" />
+          </picture>
+          <input type="text" placeholder="Search" />
+        </div>
+        <div class="header-user-container"></div>
+      </header>
+    </div>
+  </body>
 </html>

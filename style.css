@@ -1,0 +1,33 @@
+html {
+  --background-color: #ffffff;
+  --burger-color: #1f2022;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --background-color: #17171e;
+    --burger-color: #ffffff;
+  }
+}
+
+.page-container {
+  padding: 20px 0 40px 30px;
+  max-width: 1920px;
+  width: 100%;
+}
+
+header {
+  display: flex;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.burger-line {
+  width: 20px;
+  height: 3px;
+  background-color: var(--burger-color);
+}
