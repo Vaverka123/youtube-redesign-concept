@@ -6,7 +6,7 @@ html {
   --icon-fill: rgba(0, 0, 0, 0.76);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     --page-background-color: #17171e;
     --burger-color: #ffffff;
@@ -14,23 +14,35 @@ html {
     --input-bgc: rgba(235, 235, 235, 0.9);
     --icon-fill: rgba(255, 255, 255, 0.6);
   }
-}
+} */
 
 body {
+  margin: 0;
   background-color: var(--page-background-color);
 }
 
+body * {
+  box-sizing: border-box;
+}
+
 .page-container {
-  padding: 20px 0 40px 30px;
+  padding: 20px 70px 40px 30px;
   max-width: 1920px;
   width: 100%;
 }
 
 header {
   display: flex;
+  justify-content: space-between;
+}
+
+.header-general-container {
+  display: flex;
+  align-items: center;
 }
 
 .burger {
+  padding-right: 28px;
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -41,22 +53,84 @@ header {
   height: 3px;
   background-color: var(--burger-color);
 }
+
+.header-general-container picture {
+  padding-right: 59px;
+}
+
 .search-container {
-  position: relative;
+  display: flex;
+  /* position: relative; */
+  padding: 12px 23px;
   width: 830px;
   height: 44px;
   border-radius: 22px;
-  background-color: #ebebeb;
-}
 
-input {
-  padding: 12px 23px;
   background-color: var(--input-bgc);
 }
 
-.search-container svg {
-  position: absolute;
-  top: 13px;
-  right: 17px;
-  stroke: var(--search-svg);
+input {
+  width: 100%;
+  border: none;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.08px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(48, 56, 76, 0.6);
+  background-color: transparent;
+}
+
+.svg-container {
+  width: 19px;
+  height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-container svg use {
+  /*  position: absolute;  */
+  /* top: 13px;
+  right: 17px; */
+  width: 18.21px;
+  height: 18.21px;
+  fill: #000000;
+}
+
+.header-user-container {
+  display: flex;
+  gap: 45px;
+}
+
+.header-icons-container {
+  display: flex;
+  gap: 50px;
+}
+
+.header-icons-container svg use {
+  fill: var(--icon-fill);
+}
+
+.icon-phone {
+  width: 27px;
+  height: 20px;
+}
+
+.icon-combined-shape {
+  width: 21px;
+  height: 21px;
+  fill: var(--icon-fill);
+}
+
+.icon-bell {
+  width: 22px;
+  height: 26px;
+}
+
+.header-user-container img {
+  width: 40px;
+  height: 40px;
 }

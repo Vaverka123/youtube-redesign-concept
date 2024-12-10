@@ -22,22 +22,33 @@
             <span class="burger-line"></span>
           </div>
           <picture>
-            <source
+            <!-- <source
               media="(prefers-color-scheme: dark)"
               srcset="assets/logo-white.png"
-            />
+            /> -->
             <img src="assets/logo-black.png" alt="Youtube logo" />
           </picture>
           <div class="search-container">
             <input type="text" placeholder="Search" />
-            <svg id="search"></svg>
+            <div class="svg-container">
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <use href="assets/sprite.svg#search" />
+              </svg>
+            </div>
           </div>
         </div>
         <div class="header-user-container">
           <div class="header-icons-container">
-            <svg id="phone"></svg>
-            <svg id="combined-shape"></svg>
-            <svg id="bell"></svg>
+            <svg class="icon-phone" xmlns="http://www.w3.org/2000/svg">
+              <use href="assets/sprite.svg#phone" />
+            </svg>
+            <svg class="icon-combined-shape" xmlns="http://www.w3.org/2000/svg">
+              <use href="assets/sprite.svg#combined-shape" />
+            </svg>
+
+            <svg class="icon-bell" xmlns="http://www.w3.org/2000/svg">
+              <use href="assets/sprite.svg#bell" />
+            </svg>
           </div>
           <img src="assets/userpic.png" alt="User picture" />
         </div>
