@@ -1,13 +1,23 @@
 html {
-  --background-color: #ffffff;
+  --page-background-color: #ffffff;
   --burger-color: #1f2022;
+  --search-svg: #000000;
+  --input-bgc: rgba(235, 235, 235, 0.7);
+  --icon-fill: rgba(0, 0, 0, 0.76);
 }
 
 @media (prefers-color-scheme: dark) {
   html {
-    --background-color: #17171e;
+    --page-background-color: #17171e;
     --burger-color: #ffffff;
+    --search-svg: #ffffff;
+    --input-bgc: rgba(235, 235, 235, 0.9);
+    --icon-fill: rgba(255, 255, 255, 0.6);
   }
+}
+
+body {
+  background-color: var(--page-background-color);
 }
 
 .page-container {
@@ -30,4 +40,23 @@ header {
   width: 20px;
   height: 3px;
   background-color: var(--burger-color);
+}
+.search-container {
+  position: relative;
+  width: 830px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: #ebebeb;
+}
+
+input {
+  padding: 12px 23px;
+  background-color: var(--input-bgc);
+}
+
+.search-container svg {
+  position: absolute;
+  top: 13px;
+  right: 17px;
+  stroke: var(--search-svg);
 }
