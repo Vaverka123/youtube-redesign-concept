@@ -60,12 +60,10 @@ header {
 
 .search-container {
   display: flex;
-  /* position: relative; */
-  padding: 12px 23px;
+  padding: 13px 15px 12px 23px;
   width: 830px;
   height: 44px;
   border-radius: 22px;
-
   background-color: var(--input-bgc);
 }
 
@@ -92,9 +90,6 @@ input {
 }
 
 .svg-container svg use {
-  /*  position: absolute;  */
-  /* top: 13px;
-  right: 17px; */
   width: 18.21px;
   height: 18.21px;
   fill: #000000;
@@ -102,11 +97,13 @@ input {
 
 .header-user-container {
   display: flex;
-  gap: 45px;
+  align-items: center;
+  gap: 50px;
 }
 
 .header-icons-container {
   display: flex;
+  align-items: center;
   gap: 50px;
 }
 
@@ -125,9 +122,26 @@ input {
   fill: var(--icon-fill);
 }
 
-.icon-bell {
+.icon-bell svg {
   width: 22px;
   height: 26px;
+  position: relative;
+}
+
+.oval {
+  position: absolute;
+  top: 24px;
+  right: 155px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-family: Mulish;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15.06px;
+  text-align: center;
 }
 
 .header-user-container img {
