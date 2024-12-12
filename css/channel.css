@@ -1,0 +1,44 @@
+.channel-page-main-content {
+  margin-top: 30px;
+}
+
+.channel-wallpaper {
+  width: 1595px;
+  height: 280px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.channel-author {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.channel-essence-video {
+  width: 540px;
+  height: 250px;
+  border-radius: 14px;
+}
+
+.channel-essence-recommended-channels-item {
+  display: flex;
+  gap: 20px;
+}
+
+.recommended-author-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.recommended-author {
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22.59px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(25, 32, 44, 1);
+}
