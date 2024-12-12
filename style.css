@@ -3,7 +3,7 @@ html {
   --burger-color: #1f2022;
   --search-svg: #000000;
   --input-bgc: rgba(235, 235, 235, 0.3);
-  --icon-fill: rgba(0, 0, 0, 0.24);
+  --icon-fill: rgba(0, 0, 0, 0.76);
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -20,6 +20,7 @@ body {
   margin: 0;
   background-color: var(--page-background-color);
   width: 100%;
+  /* overflow-x: hidden; */
 }
 
 body * {
@@ -276,7 +277,7 @@ h3 {
   flex-direction: column;
   gap: 28px;
   flex-grow: 1;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .main-row {
@@ -318,7 +319,7 @@ h3 {
 .main-row-content {
   display: flex;
   gap: 40px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .h2-img {
@@ -440,4 +441,34 @@ p {
   display: flex;
   align-items: baseline;
   gap: 35px;
+}
+
+@media screen and (max-width: 320px) {
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .page-container {
+    padding: 0;
+    max-width: 320px;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+
+  aside {
+    width: 320px;
+    display: flex;
+    gap: 34px;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .main-row {
+    flex-direction: column;
+  }
 }
