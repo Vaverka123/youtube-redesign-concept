@@ -27,12 +27,14 @@ body * {
 }
 
 .page-container {
-  padding: 20px 70px 40px 30px;
+  /* margin: 0 auto; */
+  padding: 20px 0 40px 30px;
   max-width: 1920px;
   width: 100%;
 }
 
 header {
+  margin-right: 70px;
   display: flex;
   justify-content: space-between;
 }
@@ -283,10 +285,22 @@ h3 {
   gap: 17px;
 }
 
+.main-row-header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main-row-title {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.arrows {
+  margin-right: 145px;
+  margin-top: 36px;
+  width: 75px;
+  height: 28px;
 }
 
 .main-row-content {
