@@ -220,14 +220,16 @@
                 alt="Channel Author"
                 class="channel-author"
               />
-              <h2>Margaret Phelps</h2>
-              <p class="video-description-details">245K subscribed</p>
+              <div class="channel-titel-name">
+                <h2>Margaret Phelps</h2>
+                <p class="video-description-details">245K subscribed</p>
+              </div>
             </div>
             <div class="chanel-titel-action">
-              <svg xmlns="http://www.w3.org/2000/svg">
+              <svg class="channel-bell" xmlns="http://www.w3.org/2000/svg">
                 <use href="assets/sprite.svg#bell" />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg">
+              <svg class="subscribe-button" xmlns="http://www.w3.org/2000/svg">
                 <use href="assets/sprite.svg#subscribe-button" />
               </svg>
             </div>
@@ -235,16 +237,23 @@
           <div class="channel-essence">
             <div class="channel-essence-data">
               <div class="channel-essence-nav">
-                <div class="channel-nav-item"></div>
-                <div class="channel-nav-item"></div>
-                <div class="channel-nav-item"></div>
-                <div class="channel-nav-item"></div>
-                <div class="channel-nav-item"></div>
-                <div class="channel-nav-item"></div>
-                <div class="channel-nav-item"></div>
+                <div class="channel-nav-item">Home</div>
+                <div class="channel-nav-item">Videos</div>
+                <div class="channel-nav-item">Playlists</div>
+                <div class="channel-nav-item">Channels</div>
+                <div class="channel-nav-item">Discussion</div>
+                <div class="channel-nav-item">About</div>
+                <div class="channel-nav-item">
+                  <svg
+                    class="svg-menu-container"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="assets/sprite.svg#search" />
+                  </svg>
+                </div>
               </div>
               <div class="channel-essence-content">
-                <div class="video-container">
+                <div class="video-container channel-essence-video">
                   <img
                     class="channel-essence-video"
                     src="assets/video-home-page/choosing-the-best-audio.png"
