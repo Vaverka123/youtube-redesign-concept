@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/channel.css" />
+    <link rel="stylesheet" href="css/video-player.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Video Player Page</title>
+  </head>
+  <body>
+    <div class="page-container">
+      <header>
+        <div class="header-general-container">
+          <div class="burger hide-on-mobile">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+          </div>
+          <picture>
+            <!-- <source
+                  media="(prefers-color-scheme: dark)"
+                  srcset="assets/logo-white.png"
+                /> -->
+            <img src="assets/logo-black.png" alt="Youtube logo" />
+          </picture>
+          <div class="search-container">
+            <input class="hide-on-mobile" type="text" placeholder="Search" />
+            <div class="svg-container">
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <use href="assets/sprite.svg#search" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="header-user-container">
+          <!-- <div class="header-icons-container">
+                <svg class="icon-phone" xmlns="http://www.w3.org/2000/svg">
+                  <use href="assets/sprite.svg#phone" />
+                </svg>
+                <svg class="icon-combined-shape" xmlns="http://www.w3.org/2000/svg">
+                  <use href="assets/sprite.svg#combined-shape" />
+                </svg>
+                <div class="icon-bell">
+                  <svg xmlns="http://www.w3.org/2000/svg">
+                    <use href="assets/sprite.svg#bell" />
+                  </svg>
+                  <div class="oval">3</div>
+                </div>
+              </div> -->
+          <svg
+            class="user-icons hide-on-mobile"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <use href="assets/sprite.svg#icons" />
+          </svg>
+          <img src="assets/img/userpic.png" alt="User picture" />
+        </div>
+      </header>
+      <main>
+        <div class="video-player-page-content">
+          <div class="video-player-video-container">
+            <img
+              src="assets/video-home-page/dill-dude-you-re-getting-a-telescope.png"
+              alt="Dude You Re Getting A Telescope"
+              class="video-player-video"
+            />
+            <div class="video-player-title">
+              Dude You Re Getting A Telescope
+            </div>
+            <div class="video-player-subtitle">
+              <div class="views">123k views</div>
+              <div class="reactions">
+                <div class="reaction-box">
+                  <svg xmlns="http://www.w3.org/2000/svg">
+                    <use href="assets/sprite.svg#like" />
+                  </svg>
+                  123k
+                </div>
+                <div class="reaction-box">
+                  <svg xmlns="http://www.w3.org/2000/svg">
+                    <use href="assets/sprite.svg#dislike" />
+                  </svg>
+                  435k
+                </div>
+                <div class="reaction-box">
+                  <svg
+                    class="svg-menu-container"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="assets/sprite.svg#share" />
+                  </svg>
+                  Share
+                </div>
+
+                <svg id="more" xmlns="http://www.w3.org/2000/svg">
+                  <use href="assets/sprite.svg#more" />
+                </svg>
+              </div>
+            </div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="video-player-description">
+            <div class="video-player-description-content">
+              <img
+                src="assets/img/food-and-drink.png"
+                alt="Food & Drink"
+                class="channel-author"
+              />
+              <div class="video-player-description-text">
+                <h2 class="channel-titel">Food & Drink</h2>
+                <p class="video-description-details">
+                  Published on 14 Jun 2019
+                </p>
+
+                <p class="video-player-description-p">
+                  A successful marketing plan relies heavily on the
+                  pulling-power of advertising copy. Writing result-oriented ad
+                  copy is difficult, as it must appeal to, entice, and convince
+                  consumers to take action. There is no magic formula to write
+                  perfect ad copy; it is based on a number of factors, including
+                  ad placement, demographic, even the consumer's mood when they
+                  see your ad.
+                </p>
+
+                <div class="views">Show more</div>
+              </div>
+            </div>
+            <svg class="subscribe-button" xmlns="http://www.w3.org/2000/svg">
+              <use href="assets/sprite.svg#subscribe-button" />
+            </svg>
+          </div>
+        </div>
+        <aside></aside>
+      </main>
+    </div>
+  </body>
+</html>
