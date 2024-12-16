@@ -71,6 +71,45 @@
               alt="Dude You Re Getting A Telescope"
               class="video-player-video"
             />
+            <div class="video-player-controls-container">
+              <div class="timer-container">
+                <div class="video-player-timer" id="current-timer">1:34</div>
+                <div class="video-player-timer" id="duration-timer">19:00</div>
+              </div>
+              <div class="progress-bar-container">
+                <div class="current-progress-bar"></div>
+              </div>
+              <div class="video-player-controls">
+                <div class="video-player-buttons">
+                  <svg class="pause" xmlns="http://www.w3.org/2000/svg">
+                    <use href="assets/sprite.svg#pause" />
+                  </svg>
+                  <svg class="next" xmlns="http://www.w3.org/2000/svg">
+                    <use href="assets/sprite.svg#next" />
+                  </svg>
+                  <svg class="volume" xmlns="http://www.w3.org/2000/svg">
+                    <use href="assets/sprite.svg#volume" />
+                  </svg>
+                </div>
+                <div class="youtube-buttons">
+                  <svg class="subtitles" xmlns="http://www.w3.org/2000/svg">
+                    <use href="assets/sprite.svg#subtitles" />
+                  </svg>
+                  <svg
+                    class="video-player-settings"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="assets/sprite.svg#video-player-settings" />
+                  </svg>
+                  <svg class="size" xmlns="http://www.w3.org/2000/svg">
+                    <use href="assets/sprite.svg#size" />
+                  </svg>
+                  <svg class="full-screen" xmlns="http://www.w3.org/2000/svg">
+                    <use href="assets/sprite.svg#full-screen" />
+                  </svg>
+                </div>
+              </div>
+            </div>
             <div class="video-player-title">
               Dude You Re Getting A Telescope
             </div>
@@ -98,10 +137,11 @@
                   </svg>
                   Share
                 </div>
-
-                <svg id="more" xmlns="http://www.w3.org/2000/svg">
-                  <use href="assets/sprite.svg#more" />
-                </svg>
+                <div class="reaction-box-more">
+                  <svg xmlns="http://www.w3.org/2000/svg">
+                    <use href="assets/sprite.svg#more" />
+                  </svg>
+                </div>
               </div>
             </div>
             <div class="separator"></div>
@@ -115,7 +155,7 @@
                 class="channel-author"
               />
               <div class="video-player-description-text">
-                <h2 class="channel-titel">Food & Drink</h2>
+                <h2>Food & Drink</h2>
                 <p class="video-description-details">
                   Published on 14 Jun 2019
                 </p>
