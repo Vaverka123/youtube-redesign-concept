@@ -107,7 +107,10 @@ main {
   width: 192px;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.youtube-buttons svg {
+  stroke: rgba(0, 0, 0, 0.15);
 }
 
 .subtitles {
@@ -139,7 +142,7 @@ main {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: rgba(25, 38, 70, 1);
+  color: var(--video-player-title);
 }
 
 .video-player-subtitle {
@@ -175,7 +178,7 @@ main {
   justify-content: center;
   align-items: center;
   background: var(--reaction-box-bgc);
-  color: rgba(25, 38, 70, 1);
+  color: var(--video-player-title);
   font-family: Mulish;
   font-size: 16px;
   font-weight: 400;
@@ -289,7 +292,7 @@ aside {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   text-transform: uppercase;
-  color: rgba(25, 32, 44, 1);
+  color: var(--video-player-description-text-color);
 }
 
 .toggle-container {
@@ -308,7 +311,7 @@ aside {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: rgba(33, 150, 243, 1);
+  background: var(--toggle-color);
 }
 
 .aside-content {
@@ -386,5 +389,5 @@ aside {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: var(--video-player-description-text-color);
+  color: var(--video-description-details-color);
 }

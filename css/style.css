@@ -12,6 +12,7 @@ html {
   --video-player-description-text-color: rgba(25, 32, 44, 1);
   --video-description-details-color: rgba(194, 194, 194, 1);
   --video-player-description-p-color: rgba(0, 0, 0, 0.6);
+  --toggle-color: rgba(33, 150, 243, 1);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,6 +30,7 @@ html {
     --video-player-description-text-color: rgba(255, 255, 255, 1);
     --video-description-details-color: rgba(255, 255, 255, 0.4);
     --video-player-description-p-color: rgba(255, 255, 255, 0.6);
+    --toggle-color: rgba(255, 255, 255, 0.6);
   }
 }
 
@@ -131,6 +133,11 @@ input {
 .user-icons {
   width: 176px;
   height: 34px;
+  stroke: var(--icon-fill);
+}
+
+.user-icons use {
+  stroke: var(--icon-fill);
 }
 
 .header-icons-container svg use {
@@ -220,6 +227,7 @@ aside {
   padding-bottom: 2px;
   width: 22px;
   height: 22px;
+  fill: var(--icon-fill);
 }
 
 .menu-item svg use {
@@ -249,7 +257,7 @@ h3 {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: rgba(0, 0, 0, 1);
+  color: var(--search-svg);
 }
 
 .subscription-item {
@@ -355,7 +363,7 @@ h2 {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: rgba(25, 32, 44, 1);
+  color: var(--video-player-description-text-color);
 }
 
 .main-row-item {
@@ -418,7 +426,7 @@ h4 {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: rgba(25, 32, 44, 1);
+  color: var(--video-player-description-text-color);
 }
 
 p {
@@ -433,7 +441,7 @@ p {
   font-weight: 400;
   line-height: 16.32px;
   text-align: left;
-  color: rgba(194, 194, 194, 1);
+  color: var(--video-description-details-color);
 }
 
 .video-description-details-with-a-dot {
