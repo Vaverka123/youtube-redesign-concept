@@ -1,20 +1,36 @@
 html {
   --page-background-color: #ffffff;
   --burger-color: #1f2022;
-  --search-svg: #000000;
+  --search-svg: rgba(0, 0, 0, 1);
+
   --input-bgc: rgba(235, 235, 235, 0.3);
-  --icon-fill: rgba(0, 0, 0, 0.76);
+  --icon-fill: rgba(0, 0, 0, 0.24);
+
+  --video-player-title: rgba(25, 38, 70, 1);
+  --reaction-box-bgc: rgba(235, 235, 235, 0.3);
+  --reaction-box-color: rgba(25, 38, 70, 1);
+  --video-player-description-text-color: rgba(25, 32, 44, 1);
+  --video-description-details-color: rgba(194, 194, 194, 1);
+  --video-player-description-p-color: rgba(0, 0, 0, 0.6);
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   html {
     --page-background-color: #17171e;
     --burger-color: #ffffff;
-    --search-svg: #ffffff;
-    --input-bgc: rgba(235, 235, 235, 0.9);
-    --icon-fill: rgba(255, 255, 255, 0.6);
+    --search-svg: rgba(255, 255, 255, 1);
+
+    --input-bgc: rgba(235, 235, 235, 0.1);
+    --icon-fill: rgba(255, 255, 255, 0.4);
+
+    --video-player-title: rgba(255, 255, 255, 1);
+    --reaction-box-bgc: rgba(255, 255, 255, 0.1);
+    --reaction-box-color: rgba(255, 255, 255, 1);
+    --video-player-description-text-color: rgba(255, 255, 255, 1);
+    --video-description-details-color: rgba(255, 255, 255, 0.4);
+    --video-player-description-p-color: rgba(255, 255, 255, 0.6);
   }
-} */
+}
 
 body {
   margin: 0;
