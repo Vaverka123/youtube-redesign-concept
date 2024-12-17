@@ -2,6 +2,7 @@ html {
   --page-background-color: #ffffff;
   --burger-color: #1f2022;
   --search-svg: rgba(0, 0, 0, 1);
+  --arrow-svg: rgba(255, 255, 255, 1);
 
   --input-bgc: rgba(235, 235, 235, 0.3);
   --icon-fill: rgba(0, 0, 0, 0.24);
@@ -20,6 +21,7 @@ html {
     --page-background-color: #17171e;
     --burger-color: #ffffff;
     --search-svg: rgba(255, 255, 255, 1);
+    --arrow-svg: rgba(255, 255, 255, 0.4);
 
     --input-bgc: rgba(235, 235, 235, 0.1);
     --icon-fill: rgba(255, 255, 255, 0.4);
@@ -115,7 +117,7 @@ input {
 .svg-container svg use {
   width: 18.21px;
   height: 18.21px;
-  fill: #000000;
+  fill: var(--icon-fill);
 }
 
 .header-user-container {
@@ -124,26 +126,26 @@ input {
   gap: 45px;
 }
 
-/* .header-icons-container {
+.header-icons-container {
   display: flex;
   align-items: center;
   gap: 50px;
-} */
+}
 
-.user-icons {
+/* .user-icons {
   width: 176px;
   height: 34px;
   stroke: var(--icon-fill);
-}
+} */
 
-.user-icons use {
+/* .user-icons use {
   stroke: var(--icon-fill);
 }
-
+*/
 .header-icons-container svg use {
   fill: var(--icon-fill);
 }
-/* 
+
 .icon-phone {
   width: 27px;
   height: 20px;
@@ -175,7 +177,7 @@ input {
   font-weight: 700;
   line-height: 15.06px;
   text-align: center;
-} */
+}
 
 .header-user-container img {
   width: 40px;
@@ -336,6 +338,19 @@ h3 {
   margin-top: 36px;
   width: 75px;
   height: 28px;
+  display: flex;
+  gap: 10px;
+}
+
+.arrow-container {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--icon-fill);
+}
+
+.arrow-container svg {
+  fill: red;
 }
 
 .arrows-middle-row {
