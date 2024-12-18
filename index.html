@@ -212,22 +212,15 @@
                 />
                 <h2>Dollie Blair</h2>
               </div>
-
-              <!-- <svg class="arrows" xmlns="http://www.w3.org/2000/svg">
-                <use href="assets/sprite.svg#arrows" />
-              </svg> -->
-              <div class="arrows">
-                <div class="arrow-container">
-                  <svg xmlns="http://www.w3.org/2000/svg">
-                    <use href="assets/sprite.svg#arrow-left"></use>
-                  </svg>
-                </div>
-                <div class="arrow-container">
-                  <svg xmlns="http://www.w3.org/2000/svg">
-                    <use href="assets/sprite.svg#arrow-right"></use>
-                  </svg>
-                </div>
-              </div>
+              <picture>
+                <source
+                  media="(prefers-color-scheme: dark)"
+                  srcset="assets/sprite.svg#arrows-dark"
+                />
+                <svg class="arrows" xmlns="http://www.w3.org/2000/svg">
+                  <use href="assets/sprite.svg#arrows" />
+                </svg>
+              </picture>
             </div>
             <div class="main-row-content">
               <div class="main-row-item">
@@ -367,12 +360,18 @@
           <div class="main-row middle-row hide-on-mobile">
             <div class="main-row-header">
               <h2 class="main-row-title">Recommended</h2>
-              <svg
-                class="arrows arrows-middle-row"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <use href="assets/sprite.svg#arrows" />
-              </svg>
+              <picture>
+                <source
+                  media="(prefers-color-scheme: dark)"
+                  srcset="assets/sprite.svg#arrows-dark"
+                />
+                <svg
+                  class="arrows arrows-middle-row"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use href="assets/sprite.svg#arrows" />
+                </svg>
+              </picture>
             </div>
             <div class="main-row-content">
               <div class="main-row-item">
@@ -467,9 +466,15 @@
                 >
                   <use href="assets/sprite.svg#subscribe-button" />
                 </svg>
-                <svg class="arrows" xmlns="http://www.w3.org/2000/svg">
-                  <use href="assets/sprite.svg#arrows" />
-                </svg>
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="assets/sprite.svg#arrows-dark"
+                  />
+                  <svg class="arrows" xmlns="http://www.w3.org/2000/svg">
+                    <use href="assets/sprite.svg#arrows" />
+                  </svg>
+                </picture>
               </div>
             </div>
             <div class="main-row-content">
