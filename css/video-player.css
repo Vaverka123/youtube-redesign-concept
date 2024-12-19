@@ -1,3 +1,8 @@
+.hide-on-desktop,
+.subscribe-mobile {
+  display: none;
+}
+
 main {
   display: flex;
   gap: 40px;
@@ -16,7 +21,8 @@ main {
 }
 
 .video-player-video {
-  width: 1363px;
+  width: 100%;
+  max-width: 1363px;
   height: 700px;
   border-radius: 14px;
   object-fit: cover;
@@ -31,6 +37,7 @@ main {
 .timer-container {
   position: relative;
   bottom: 47px;
+  width: 1298px;
 }
 
 .video-player-timer {
@@ -55,7 +62,8 @@ main {
 
 .progress-bar-container {
   position: relative;
-  width: 1297px;
+  width: 100%;
+  max-width: 1297px;
   height: 10px;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.2);
@@ -96,9 +104,27 @@ main {
   height: 18px;
 }
 
-.volume {
-  width: 130px;
+.speaker {
+  width: 24px;
   height: 24px;
+}
+
+.volume-container {
+  margin-left: -20px;
+  position: relative;
+  width: 86px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.volume-level {
+  position: absolute;
+  left: 0;
+  width: 36px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: white;
 }
 
 .youtube-buttons {
@@ -159,7 +185,7 @@ main {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: rgba(194, 194, 194, 1);
+  color: var(--video-description-details-color);
 }
 
 .reactions {
@@ -394,4 +420,167 @@ aside {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   color: var(--video-description-details-color);
+}
+
+@media screen and (max-width: 320px) {
+  main {
+    flex-direction: column;
+  }
+
+  .video-player-page-content {
+    margin: 16px 0 0 0;
+    width: 320px;
+  }
+
+  .video-player-video {
+    width: 320px;
+    height: 180px;
+    border-radius: 0;
+  }
+
+  .progress-bar-container {
+    width: 308px;
+    height: 30px;
+  }
+
+  .video-player-timer {
+    font-family: Mulish;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12.55px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .video-player-title {
+    margin: 10px 0 0 16px;
+    width: 284px;
+    height: 50px;
+
+    display: flex;
+    gap: 64px;
+
+    font-family: Mulish;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25.1px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .progress-bar-container {
+    top: 13px;
+    left: 72px;
+    max-width: 156px;
+    height: 5px;
+    border-radius: 2.5px;
+  }
+
+  .current-progress-bar {
+    width: 59px;
+    height: 5px;
+    border-radius: 2.5px;
+  }
+
+  .video-player-controls-container {
+    top: 100px;
+  }
+
+  .timer-container {
+    width: 221px;
+    left: 45px;
+    bottom: -9px;
+  }
+
+  .speaker,
+  .pause {
+    width: 12px;
+    height: 12px;
+  }
+
+  .video-player-controls-container {
+    left: 5px;
+    top: 142px;
+    width: 308px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgba(61, 61, 61, 0.6);
+  }
+
+  .video-player-buttons {
+    left: 20px;
+    bottom: -1px;
+    gap: 248px;
+  }
+
+  .video-player-subtitle {
+    margin-top: 2px;
+    margin-left: 16px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    gap: 34px;
+  }
+
+  .views {
+    font-family: Mulish;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.06px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .reaction-box {
+    padding: 10px 20px;
+  }
+
+  .separator {
+    margin: 0 0 0 16px;
+
+    width: 288px;
+  }
+
+  .hide-on-desktop {
+    display: block;
+  }
+
+  .channel-author {
+    width: 50px;
+    height: 50px;
+  }
+
+  .subscribe-mobile {
+    margin-left: 10px;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.08px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: red;
+  }
+
+  .video-player-description-text {
+    gap: 4px;
+    width: 130px;
+  }
+
+  h2 {
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.08px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .video-player-description-content {
+    margin: -18px 0 0px 18px;
+    align-items: center;
+  }
 }

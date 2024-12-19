@@ -30,7 +30,8 @@
             />
             <img src="assets/logo-black.png" alt="Youtube logo" />
           </picture>
-          <div class="search-container">
+
+          <div class="search-container transparent-bgc">
             <input class="hide-on-mobile" type="text" placeholder="Search" />
             <div class="svg-container">
               <svg xmlns="http://www.w3.org/2000/svg">
@@ -40,7 +41,7 @@
           </div>
         </div>
         <div class="header-user-container">
-          <div class="header-icons-container">
+          <div class="header-icons-container hide-on-mobile">
             <svg class="icon-phone" xmlns="http://www.w3.org/2000/svg">
               <use href="assets/sprite.svg#phone" />
             </svg>
@@ -55,7 +56,16 @@
             </div>
           </div>
 
-          <img src="assets/img/userpic.png" alt="User picture" />
+          <img
+            class="hide-on-mobile"
+            src="assets/img/userpic.png"
+            alt="User picture"
+          />
+          <div class="combined-shape">
+            <div class="combined-part"></div>
+            <div class="combined-part"></div>
+            <div class="combined-part"></div>
+          </div>
         </div>
       </header>
       <main>
@@ -79,27 +89,42 @@
                   <svg class="pause" xmlns="http://www.w3.org/2000/svg">
                     <use href="assets/sprite.svg#pause" />
                   </svg>
-                  <svg class="next" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    class="next hide-on-mobile"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <use href="assets/sprite.svg#next" />
                   </svg>
-                  <svg class="volume" xmlns="http://www.w3.org/2000/svg">
-                    <use href="assets/sprite.svg#volume" />
+                  <svg class="speaker" xmlns="http://www.w3.org/2000/svg">
+                    <use href="assets/sprite.svg#speaker" />
                   </svg>
+                  <div class="volume-container hide-on-mobile">
+                    <div class="volume-level"></div>
+                  </div>
                 </div>
-                <div class="youtube-buttons">
-                  <svg class="subtitles" xmlns="http://www.w3.org/2000/svg">
+                <div class="youtube-buttons hide-on-mobile">
+                  <svg
+                    class="subtitles hide-on-mobile"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <use href="assets/sprite.svg#subtitles" />
                   </svg>
                   <svg
-                    class="video-player-settings"
+                    class="video-player-settings hide-on-mobile"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <use href="assets/sprite.svg#video-player-settings" />
                   </svg>
-                  <svg class="size" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    class="size hide-on-mobile"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <use href="assets/sprite.svg#size" />
                   </svg>
-                  <svg class="full-screen" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    class="full-screen hide-on-mobile"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <use href="assets/sprite.svg#full-screen" />
                   </svg>
                 </div>
@@ -107,7 +132,16 @@
             </div>
             <div class="video-player-title">
               Dude You Re Getting A Telescope
+              <div class="channel-nav-item arrow-down">
+                <svg
+                  class="subscribe-button"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use href="assets/sprite.svg#arrow-down" />
+                </svg>
+              </div>
             </div>
+
             <div class="video-player-subtitle">
               <div class="views">123k views</div>
               <div class="reactions">
@@ -135,7 +169,7 @@
                   </svg>
                   Share
                 </div>
-                <div class="reaction-box-more">
+                <div class="reaction-box-more hide-on-mobile">
                   <svg xmlns="http://www.w3.org/2000/svg">
                     <use href="assets/sprite.svg#more" />
                   </svg>
@@ -154,11 +188,12 @@
               />
               <div class="video-player-description-text">
                 <h2>Food & Drink</h2>
-                <p class="video-description-details">
+                <div class="views hide-on-desktop">245K subscribed</div>
+                <p class="video-description-details hide-on-mobile">
                   Published on 14 Jun 2019
                 </p>
 
-                <p class="video-player-description-p">
+                <p class="video-player-description-p hide-on-mobile">
                   A successful marketing plan relies heavily on the
                   pulling-power of advertising copy. Writing result-oriented ad
                   copy is difficult, as it must appeal to, entice, and convince
@@ -168,13 +203,19 @@
                   see your ad.
                 </p>
 
-                <div class="views show-more">Show more</div>
+                <div class="views show-more hide-on-mobile">Show more</div>
               </div>
+              <div class="subscribe-mobile hide-on-desktop">Subscribe</div>
             </div>
-            <svg class="subscribe-button" xmlns="http://www.w3.org/2000/svg">
+
+            <svg
+              class="subscribe-button hide-on-mobile"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <use href="assets/sprite.svg#subscribe-button" />
             </svg>
           </div>
+          <div class="separator hide-on-desktop"></div>
         </div>
         <aside>
           <div class="aside-header">
