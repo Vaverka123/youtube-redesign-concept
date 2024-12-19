@@ -22,14 +22,24 @@
             <span class="burger-line"></span>
             <span class="burger-line"></span>
           </div>
-          <picture>
+          <picture class="hide-on-mobile">
             <source
               media="(prefers-color-scheme: dark)"
               srcset="assets/logo-white.png"
             />
             <img src="assets/logo-black.png" alt="Youtube logo" />
           </picture>
-          <div class="search-container">
+
+          <div class="mobile-general-header">
+            <img
+              class="youtube-shape"
+              src="assets/shape.png"
+              alt="Youtube logo"
+            />
+            <div class="shape-author">Margaret Phelps</div>
+          </div>
+
+          <div class="search-container transparent-bgc">
             <input class="hide-on-mobile" type="text" placeholder="Search" />
             <div class="svg-container">
               <svg xmlns="http://www.w3.org/2000/svg">
@@ -39,7 +49,7 @@
           </div>
         </div>
         <div class="header-user-container">
-          <div class="header-icons-container">
+          <div class="header-icons-container hide-on-mobile">
             <svg class="icon-phone" xmlns="http://www.w3.org/2000/svg">
               <use href="assets/sprite.svg#phone" />
             </svg>
@@ -54,7 +64,16 @@
             </div>
           </div>
 
-          <img src="assets/img/userpic.png" alt="User picture" />
+          <img
+            class="hide-on-mobile"
+            src="assets/img/userpic.png"
+            alt="User picture"
+          />
+          <div class="combined-shape">
+            <div class="combined-part"></div>
+            <div class="combined-part"></div>
+            <div class="combined-part"></div>
+          </div>
         </div>
       </header>
       <main>
@@ -62,7 +81,7 @@
           <nav>
             <div class="menu">
               <div class="menu-top">
-                <div class="menu-item" style="color: #ff0000">
+                <div class="menu-item red-color-menu-item">
                   <svg
                     class="svg-menu-container"
                     xmlns="http://www.w3.org/2000/svg"
@@ -202,6 +221,7 @@
             Setting
           </div>
         </aside>
+        <div class="menu-separator"></div>
         <div class="channel-page-main-content">
           <img
             src="assets/video-home-page/channel-wallpaper.png"
@@ -221,7 +241,10 @@
               </div>
             </div>
             <div class="chanel-titel-action">
-              <svg class="channel-bell" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                class="channel-bell hide-on-mobile"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <use href="assets/sprite.svg#bell" />
               </svg>
               <svg class="subscribe-button" xmlns="http://www.w3.org/2000/svg">
@@ -238,10 +261,18 @@
                 </div>
                 <div class="channel-nav-item">Videos</div>
                 <div class="channel-nav-item">Playlists</div>
-                <div class="channel-nav-item">Channels</div>
-                <div class="channel-nav-item">Discussion</div>
-                <div class="channel-nav-item">About</div>
-                <div class="channel-nav-item">
+                <div class="channel-nav-item arrow-down">
+                  <svg
+                    class="subscribe-button"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="assets/sprite.svg#arrow-down" />
+                  </svg>
+                </div>
+                <div class="channel-nav-item hide-on-mobile">Channels</div>
+                <div class="channel-nav-item hide-on-mobile">Discussion</div>
+                <div class="channel-nav-item hide-on-mobile">About</div>
+                <div class="channel-nav-item hide-on-mobile">
                   <svg
                     class="svg-menu-container"
                     xmlns="http://www.w3.org/2000/svg"
@@ -250,8 +281,8 @@
                   </svg>
                 </div>
               </div>
-              <div class="channel-essence-content">
-                <div class="video-container">
+              <div class="channel-essence-content hide-on-mobile">
+                <div class="video-container hide-on-mobile">
                   <img
                     class="channel-essence-video"
                     src="assets/video-home-page/choosing-the-best-audio.png"
@@ -259,21 +290,27 @@
                   />
                   <div class="timer">7:36</div>
                 </div>
-                <div class="channel-essence-video-description">
-                  <div class="video-description-title">
+                <div class="channel-essence-video-description hide-on-mobile">
+                  <div class="video-description-title hide-on-mobile">
                     Choosing The Best Audio Player
                     <br />
                     Software For Your Computer
                   </div>
-                  <div class="channel-essence-video-description-details">
-                    <p class="channel-essence-video-description-details-p">
+                  <div
+                    class="channel-essence-video-description-details hide-on-mobile"
+                  >
+                    <p
+                      class="channel-essence-video-description-details-p hide-on-mobile"
+                    >
                       Your cheap internet-based banner advertising will become
                       one of the sought for ads there are. Today, the world of
                       Internet advertising is rapidly evolving beyond banner ads
                       and intrusive pop-ups. Bayles A common medium for
                       advertising on the Internet is the use of banner ads.
                     </p>
-                    <div class="video-description-details-with-a-dot">
+                    <div
+                      class="video-description-details-with-a-dot hide-on-mobile"
+                    >
                       <p>11k views</p>
                       <p>·</p>
                       <p>6 months ago</p>
@@ -282,7 +319,7 @@
                 </div>
               </div>
             </div>
-            <div class="channel-essence-recommended">
+            <div class="channel-essence-recommended hide-on-mobile">
               <p class="details">Recommended channel</p>
               <div class="channel-essence-recommended-channels">
                 <div class="channel-essence-recommended-channels-item">
@@ -314,7 +351,7 @@
           </div>
 
           <div class="main-row">
-            <div class="main-row-header">
+            <div class="main-row-header hide-on-mobile">
               <h2 class="main-row-title">Margaret Phelps videos</h2>
               <picture>
                 <source
@@ -393,7 +430,7 @@
                   </div>
                 </div>
               </div>
-              <div class="main-row-item">
+              <div class="main-row-item hide-on-mobile">
                 <div class="video-container">
                   <img
                     class="first-main-row-video"
@@ -415,7 +452,7 @@
                   </div>
                 </div>
               </div>
-              <div class="main-row-item">
+              <div class="main-row-item hide-on-mobile">
                 <div class="video-container">
                   <img
                     class="first-main-row-video"
@@ -437,7 +474,7 @@
                   </div>
                 </div>
               </div>
-              <div class="main-row-item">
+              <div class="main-row-item hide-on-mobile">
                 <div class="video-container">
                   <img
                     class="first-main-row-video"
