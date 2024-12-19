@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,7 +16,7 @@
     <div class="page-container">
       <header>
         <div class="header-general-container">
-          <div class="burger">
+          <div class="burger hide-on-mobile">
             <span class="burger-line"></span>
             <span class="burger-line"></span>
             <span class="burger-line"></span>
@@ -28,20 +28,593 @@
             />
             <img src="assets/logo-black.png" alt="Youtube logo" />
           </picture>
-          <div class="search-container">
-            <input type="text" placeholder="Search" />
-            <svg id="search"></svg>
+          <div class="search-container transparent-bgc">
+            <input class="hide-on-mobile" type="text" placeholder="Search" />
+            <div class="svg-container">
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <use href="assets/sprite.svg#search" />
+              </svg>
+            </div>
           </div>
         </div>
         <div class="header-user-container">
-          <div class="header-icons-container">
-            <svg id="phone"></svg>
-            <svg id="combined-shape"></svg>
-            <svg id="bell"></svg>
+          <div class="header-icons-container hide-on-mobile">
+            <svg class="icon-phone" xmlns="http://www.w3.org/2000/svg">
+              <use href="assets/sprite.svg#phone" />
+            </svg>
+            <svg class="icon-combined-shape" xmlns="http://www.w3.org/2000/svg">
+              <use href="assets/sprite.svg#combined-shape" />
+            </svg>
+            <div class="icon-bell">
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <use href="assets/sprite.svg#bell" />
+              </svg>
+              <div class="oval">3</div>
+            </div>
           </div>
-          <img src="assets/userpic.png" alt="User picture" />
+
+          <img src="assets/img/userpic.png" alt="User picture" />
         </div>
       </header>
+      <main>
+        <aside>
+          <nav>
+            <div class="menu">
+              <div class="menu-top">
+                <div class="menu-item" style="color: #ff0000">
+                  <svg
+                    class="svg-menu-container"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="assets/sprite.svg#home" />
+                  </svg>
+                  Home
+                </div>
+                <div class="menu-item">
+                  <svg
+                    class="svg-menu-container"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="assets/sprite.svg#trending" />
+                  </svg>
+                  Trending
+                </div>
+                <div class="menu-item">
+                  <svg
+                    class="svg-menu-container"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="assets/sprite.svg#subscriptions" />
+                  </svg>
+                  Subscriptions
+                </div>
+              </div>
+              <div class="menu-rest">
+                <div class="menu-item">
+                  <svg
+                    class="svg-menu-container"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="assets/sprite.svg#library" />
+                  </svg>
+                  Library
+                </div>
+                <div class="menu-item hide-on-mobile">
+                  <svg
+                    class="svg-menu-container"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="assets/sprite.svg#history" />
+                  </svg>
+                  History
+                </div>
+                <div class="menu-item hide-on-mobile">
+                  <svg
+                    class="svg-menu-container"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="assets/sprite.svg#watch-later" />
+                  </svg>
+                  Watch later
+                </div>
+                <div class="menu-item hide-on-mobile">
+                  <svg
+                    class="svg-menu-container"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="assets/sprite.svg#favourites" />
+                  </svg>
+                  Favourites
+                </div>
+                <div class="menu-item hide-on-mobile">
+                  <svg
+                    class="svg-menu-container"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="assets/sprite.svg#liked-videos" />
+                  </svg>
+                  Liked videos
+                </div>
+                <div class="menu-item hide-on-mobile">
+                  <svg
+                    class="svg-menu-container"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="assets/sprite.svg#music" />
+                  </svg>
+                  Music
+                </div>
+                <div class="menu-item hide-on-mobile">
+                  <svg
+                    class="svg-menu-container"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="assets/sprite.svg#games" />
+                  </svg>
+                  Games
+                </div>
+                <div class="menu-item hide-on-mobile">
+                  <svg
+                    class="svg-menu-container"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="assets/sprite.svg#show-more" />
+                  </svg>
+                  Show more
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class="subscriptions-container hide-on-mobile">
+            <h3>Subscriptions</h3>
+            <div class="subscriptions-list">
+              <div class="subscription-item">
+                <img src="assets/img/gus.png" alt="Gussie Singleton" />
+                Gussie Singleton
+              </div>
+              <div class="subscription-item">
+                <img src="assets/img/nora.png" alt="Nora Francis" />
+                Nora Francis
+              </div>
+              <div class="subscription-item">
+                <img src="assets/img/belle.png" alt="Belle Briggs" />
+                Belle Briggs
+              </div>
+              <div class="subscription-item">
+                <img src="assets/img/eunice.png" alt="Eunice Cortez" />
+                Eunice Cortez
+              </div>
+              <div class="subscription-item">
+                <img src="assets/img/emma.png" alt="Emma Hanson" />
+                Emma Hanson
+              </div>
+              <div class="subscription-item">
+                <img src="assets/img/leah.png" alt="Leah Berry" />
+                Leah Berry
+              </div>
+            </div>
+          </div>
+          <div class="setting-container details hide-on-mobile">
+            <svg class="svg-menu-container" xmlns="http://www.w3.org/2000/svg">
+              <use href="assets/sprite.svg#settings" />
+            </svg>
+            Setting
+          </div>
+        </aside>
+        <div class="menu-separator"></div>
+        <div class="main-content">
+          <div class="main-row">
+            <div class="main-row-header hide-on-mobile">
+              <div class="main-row-title">
+                <img
+                  class="h2-img"
+                  src="assets/img/gus.png"
+                  alt="Dollie Blair"
+                />
+                <h2>Dollie Blair</h2>
+              </div>
+              <picture>
+                <source
+                  media="(prefers-color-scheme: dark)"
+                  srcset="assets/sprite.svg#arrows-dark"
+                />
+                <svg class="arrows" xmlns="http://www.w3.org/2000/svg">
+                  <use href="assets/sprite.svg#arrows" />
+                </svg>
+              </picture>
+            </div>
+            <div class="main-row-content">
+              <div class="main-row-item">
+                <div class="video-container">
+                  <img
+                    class="first-main-row-video"
+                    src="assets/video-home-page/a-brief.png"
+                    alt="A Brief History Of Creation video"
+                  />
+                  <div class="timer">4:15</div>
+                </div>
+
+                <div class="video-description">
+                  <h4>A Brief History Of Creation</h4>
+                  <div class="video-description-details">
+                    <div class="video-description-details-with-a-dot">
+                      <p>80k views</p>
+                      <p>·</p>
+                      <p>3 days ago</p>
+                    </div>
+                    <p>Dollie Blair</p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-row-item">
+                <div class="video-container">
+                  <img
+                    class="first-main-row-video"
+                    src="assets/video-home-page/selecting-the.png"
+                    alt="Selecting The Right Hotel"
+                  />
+                  <div class="timer">8:00</div>
+                </div>
+
+                <div class="video-description">
+                  <h4>Selecting The Right Hotel</h4>
+                  <div class="video-description-details">
+                    <div class="video-description-details-with-a-dot">
+                      <p>123k views</p>
+                      <p>·</p>
+                      <p>1 months ago</p>
+                    </div>
+                    <p>Dollie Blair</p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-row-item">
+                <div class="video-container">
+                  <img
+                    class="first-main-row-video"
+                    src="assets/video-home-page/asteroids.png"
+                    alt="Asteroids"
+                  />
+                  <div class="timer">5:32</div>
+                </div>
+
+                <div class="video-description">
+                  <h4>Asteroids</h4>
+                  <div class="video-description-details">
+                    <div class="video-description-details-with-a-dot">
+                      <p>43k views</p>
+                      <p>·</p>
+                      <p>12 days ago</p>
+                    </div>
+                    <p>Dollie Blair</p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-row-item">
+                <div class="video-container">
+                  <img
+                    class="first-main-row-video"
+                    src="assets/video-home-page/telescopes-101.png"
+                    alt="Telescopes 101"
+                  />
+                  <div class="timer">6:40</div>
+                </div>
+
+                <div class="video-description">
+                  <h4>Telescopes 101</h4>
+                  <div class="video-description-details">
+                    <div class="video-description-details-with-a-dot">
+                      <p>11k views</p>
+                      <p>·</p>
+                      <p>6 months ago</p>
+                    </div>
+                    <p>Dollie Blair</p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-row-item hide-on-mobile">
+                <div class="video-container">
+                  <img
+                    class="first-main-row-video"
+                    src="assets/video-home-page/medical-care-is-just.png"
+                    alt="Medical Care Is Just"
+                  />
+                  <div class="timer">1:45</div>
+                </div>
+
+                <div class="video-description">
+                  <h4>Medical Care Is Just</h4>
+                  <div class="video-description-details">
+                    <div class="video-description-details-with-a-dot">
+                      <p>18k views</p>
+                      <p>·</p>
+                      <p>2 days ago</p>
+                    </div>
+                    <p>Dollie Blair</p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-row-item hide-on-mobile">
+                <div class="video-container">
+                  <img
+                    class="first-main-row-video"
+                    src="assets/video-home-page/moon-gazing.png"
+                    alt="Moon Gazing"
+                  />
+                  <div class="timer">2:12</div>
+                </div>
+
+                <div class="video-description">
+                  <h4>Moon Gazing</h4>
+                  <div class="video-description-details">
+                    <div class="video-description-details-with-a-dot">
+                      <p>67k views</p>
+                      <p>·</p>
+                      <p>4 months ago</p>
+                    </div>
+                    <p>Dollie Blair</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-row middle-row hide-on-mobile">
+            <div class="main-row-header">
+              <h2 class="main-row-title">Recommended</h2>
+              <picture>
+                <source
+                  media="(prefers-color-scheme: dark)"
+                  srcset="assets/sprite.svg#arrows-dark"
+                />
+                <svg
+                  class="arrows arrows-middle-row"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use href="assets/sprite.svg#arrows" />
+                </svg>
+              </picture>
+            </div>
+            <div class="main-row-content">
+              <div class="main-row-item">
+                <div class="video-container">
+                  <img
+                    class="second-main-row-video"
+                    src="assets/video-home-page/dude-you-re-getting-a-telescope.png"
+                    alt="Dude You Re Getting A Telescope"
+                  />
+                  <div class="timer">3:40</div>
+                </div>
+
+                <div class="video-description">
+                  <h4>Dude You Re Getting A Telescope</h4>
+                  <div class="video-description-details">
+                    <div
+                      class="video-description-details-with-a-dot video-description-details-with-a-dot-middle-row"
+                    >
+                      <p>34k views</p>
+                      <p>·</p>
+                      <p>5 months ago</p>
+                    </div>
+                    <p>Gussie French</p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-row-item">
+                <div class="video-container">
+                  <img
+                    class="second-main-row-video"
+                    src="assets/video-home-page/2nd-moon-gazing.png"
+                    alt="Moon Gazing"
+                  />
+                  <div class="timer">2:12</div>
+                </div>
+
+                <div class="video-description">
+                  <h4>Moon Gazing</h4>
+                  <div class="video-description-details">
+                    <div
+                      class="video-description-details-with-a-dot video-description-details-with-a-dot-middle-row"
+                    >
+                      <p>54k views</p>
+                      <p>·</p>
+                      <p>11 months ago</p>
+                    </div>
+                    <p>Edward Osborne</p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-row-item">
+                <div class="video-container">
+                  <img
+                    class="second-main-row-video"
+                    src="assets/video-home-page/rose-moon-gazing.png"
+                    alt="Moon Gazing"
+                  />
+                  <div class="timer">2:12</div>
+                </div>
+
+                <div class="video-description">
+                  <h4>Moon Gazing</h4>
+                  <div class="video-description-details">
+                    <div
+                      class="video-description-details-with-a-dot video-description-details-with-a-dot-middle-row"
+                    >
+                      <p>125k views</p>
+                      <p>·</p>
+                      <p>4 months ago</p>
+                    </div>
+                    <p>Dollie Blair</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main-row third-row hide-on-mobile">
+            <div class="main-row-header">
+              <div class="main-row-title">
+                <img
+                  class="h2-img"
+                  src="assets/img/food-and-drink.png"
+                  alt="Food and Drink"
+                />
+                <h2>Food & Drink</h2>
+                <p class="details">Recommended channel for you</p>
+              </div>
+              <div class="main-row-nav">
+                <svg
+                  class="subscribe-button"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <use href="assets/sprite.svg#subscribe-button" />
+                </svg>
+                <picture>
+                  <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="assets/sprite.svg#arrows-dark"
+                  />
+                  <svg class="arrows" xmlns="http://www.w3.org/2000/svg">
+                    <use href="assets/sprite.svg#arrows" />
+                  </svg>
+                </picture>
+              </div>
+            </div>
+            <div class="main-row-content">
+              <div class="main-row-item">
+                <div class="video-container">
+                  <img
+                    class="first-main-row-video"
+                    src="assets/video-home-page/astronomy-or-astrology.png"
+                    alt="Astronomy Or Astrology"
+                  />
+                  <div class="timer">7:36</div>
+                </div>
+
+                <div class="video-description">
+                  <h4>Astronomy Or Astrology</h4>
+                  <div class="video-description-details">
+                    <div class="video-description-details-with-a-dot">
+                      <p>240k views</p>
+                      <p>·</p>
+                      <p>4 months ago</p>
+                    </div>
+                    <p>Food & Drink</p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-row-item">
+                <div class="video-container">
+                  <img
+                    class="first-main-row-video"
+                    src="assets/video-home-page/advertising-outdoors.png"
+                    alt="Advertising Outdoors"
+                  />
+                  <div class="timer">2:19</div>
+                </div>
+
+                <div class="video-description">
+                  <h4>Advertising Outdoors</h4>
+                  <div class="video-description-details">
+                    <div class="video-description-details-with-a-dot">
+                      <p>13k views</p>
+                      <p>·</p>
+                      <p>15 days ago</p>
+                    </div>
+                    <p>Food & Drink</p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-row-item">
+                <div class="video-container">
+                  <img
+                    class="first-main-row-video"
+                    src="assets/video-home-page/radio-astronomy.png"
+                    alt="Radio Astronomy"
+                  />
+                  <div class="timer">9:05</div>
+                </div>
+
+                <div class="video-description">
+                  <h4>Radio Astronomy</h4>
+                  <div class="video-description-details">
+                    <div class="video-description-details-with-a-dot">
+                      <p>1k views</p>
+                      <p>·</p>
+                      <p>11 months ago</p>
+                    </div>
+                    <p>Food & Drink</p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-row-item">
+                <div class="video-container">
+                  <img
+                    class="first-main-row-video"
+                    src="assets/video-home-page/a-good-autoresponder.png"
+                    alt="A Good Autoresponder"
+                  />
+                  <div class="timer">3:40</div>
+                </div>
+
+                <div class="video-description">
+                  <h4>A Good Autoresponder</h4>
+                  <div class="video-description-details">
+                    <div class="video-description-details-with-a-dot">
+                      <p>45k views</p>
+                      <p>·</p>
+                      <p>2 months ago</p>
+                    </div>
+                    <p>Food & Drink</p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-row-item">
+                <div class="video-container">
+                  <img
+                    class="first-main-row-video"
+                    src="assets/video-home-page/baby-monitor-technology.png"
+                    alt="Baby Monitor Technology"
+                  />
+                  <div class="timer">1:56</div>
+                </div>
+
+                <div class="video-description">
+                  <h4>Baby Monitor Technology</h4>
+                  <div class="video-description-details">
+                    <div class="video-description-details-with-a-dot">
+                      <p>86k views</p>
+                      <p>·</p>
+                      <p>7 days ago</p>
+                    </div>
+                    <p>Food & Drink</p>
+                  </div>
+                </div>
+              </div>
+              <div class="main-row-item">
+                <div class="video-container">
+                  <img
+                    class="first-main-row-video"
+                    src="assets/video-home-page/watermelon-asteroids.png"
+                    alt="Asteroids"
+                  />
+                  <div class="timer">4:15</div>
+                </div>
+
+                <div class="video-description">
+                  <h4>Asteroids</h4>
+                  <div class="video-description-details">
+                    <div class="video-description-details-with-a-dot">
+                      <p>123k views</p>
+                      <p>·</p>
+                      <p>4 months ago</p>
+                    </div>
+                    <p>Dollie Blair</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>
