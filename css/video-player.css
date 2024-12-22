@@ -30,18 +30,32 @@ main {
 
 .video-player-controls-container {
   position: absolute;
-  bottom: 202px;
+  bottom: 162px;
   left: 33px;
+
+  width: 100%;
+  max-width: 1297px;
+
+  display: grid;
+  grid-template-areas:
+    "current duration"
+    "progress-bar progress-bar"
+    "controls settings";
+
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+
+  row-gap: 12px;
 }
 
-.timer-container {
+/* .timer-container {
   position: relative;
   bottom: 47px;
   width: 1298px;
-}
+} */
 
 .video-player-timer {
-  position: absolute;
+  /* position: absolute; */
   font-family: Mulish;
   font-size: 22px;
   font-weight: 400;
@@ -52,16 +66,20 @@ main {
   color: rgba(255, 255, 255, 1);
 }
 
-#current-timer {
-  left: 0;
+.current-timer {
+  grid-area: current;
 }
 
-#duration-timer {
-  right: 0;
+.duration-timer {
+  grid-area: duration;
+
+  display: flex;
+  justify-content: end;
 }
 
 .progress-bar-container {
   position: relative;
+  grid-area: progress-bar;
   width: 100%;
   max-width: 1297px;
   height: 10px;
@@ -78,25 +96,28 @@ main {
   background: rgba(255, 0, 0, 1);
 }
 
-.video-player-controls {
-  /* display: flex;
-  justify-content: space-between; */
+/* .video-player-controls {
+  display: flex;
+  justify-content: space-between;
   position: relative;
   top: 21px;
-}
+} */
 
 .video-player-buttons {
-  position: absolute;
+  /* position: absolute; */
+
+  margin-left: 10px;
+  grid-area: controls;
   left: 10px;
   height: 24px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 40px;
 }
 
 .pause {
   width: 22px;
+  height: 24px;
 }
 
 .next {
@@ -110,8 +131,8 @@ main {
 }
 
 .volume-container {
-  margin-left: -20px;
-  position: relative;
+  /* margin-left: -20px; */
+  /* position: relative; */
   width: 86px;
   height: 8px;
   border-radius: 4px;
@@ -119,7 +140,7 @@ main {
 }
 
 .volume-level {
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   width: 36px;
   height: 8px;
@@ -128,11 +149,15 @@ main {
 }
 
 .youtube-buttons {
-  position: absolute;
-  right: 10px;
-  width: 192px;
+  /* position: absolute; */
+  grid-area: settings;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: flex-start;
+  gap: 25px;
+
+  margin-right: 10px;
 }
 
 .youtube-buttons svg {
@@ -189,7 +214,7 @@ main {
 }
 
 .reactions {
-  margin-top: -13px;
+  /* margin-top: -13px; */
   display: flex;
   align-items: center;
   gap: 10px;
@@ -239,7 +264,7 @@ main {
 }
 
 .video-player-description {
-  margin-left: -5px;
+  /* margin-left: -5px; */
   display: flex;
   justify-content: space-between;
 }
@@ -437,7 +462,7 @@ aside {
     height: 180px;
     border-radius: 0;
   }
-
+  /* 
   .progress-bar-container {
     width: 308px;
     height: 30px;
@@ -513,7 +538,7 @@ aside {
     left: 20px;
     bottom: -1px;
     gap: 248px;
-  }
+  } */
 
   .video-player-subtitle {
     margin-top: 2px;
@@ -579,8 +604,8 @@ aside {
     text-decoration-skip-ink: none;
   }
 
-  .video-player-description-content {
+  /* .video-player-description-content {
     margin: -18px 0 0px 18px;
     align-items: center;
-  }
+  } */
 }
