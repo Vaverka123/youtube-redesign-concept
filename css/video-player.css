@@ -3,6 +3,18 @@
   display: none;
 }
 
+.header-general-container picture {
+  padding-right: 28px;
+}
+
+.search-container {
+  padding-right: 45px;
+}
+
+.header-icons-container {
+  gap: 45px;
+}
+
 main {
   display: flex;
   gap: 40px;
@@ -30,7 +42,7 @@ main {
 
 .video-player-controls-container {
   position: absolute;
-  bottom: 162px;
+  bottom: 150px;
   left: 33px;
 
   width: 100%;
@@ -197,12 +209,12 @@ main {
 }
 
 .video-player-subtitle {
-  margin-top: 14px;
   display: flex;
   justify-content: space-between;
 }
 
 .views {
+  margin-top: 14px;
   font-family: Mulish;
   font-size: 20px;
   font-weight: 400;
@@ -304,6 +316,7 @@ h2 {
 }
 
 .show-more {
+  margin-top: 0;
   color: var(--video-description-details-color);
 }
 
