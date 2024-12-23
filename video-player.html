@@ -94,7 +94,10 @@
                 >
                   <use href="assets/sprite.svg#next" />
                 </svg>
-                <svg class="speaker" xmlns="http://www.w3.org/2000/svg">
+                <svg
+                  class="speaker hide-on-mobile"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <use href="assets/sprite.svg#speaker" />
                 </svg>
                 <div class="volume-container hide-on-mobile">
@@ -127,50 +130,58 @@
                   <use href="assets/sprite.svg#full-screen" />
                 </svg>
               </div>
+              <svg
+                class="speaker hide-on-desktop speaker-on-mobile"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="assets/sprite.svg#speaker" />
+              </svg>
             </div>
-            <div class="video-player-title">
-              Dude You Re Getting A Telescope
-              <div class="channel-nav-item arrow-down">
-                <svg
-                  class="subscribe-button"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <use href="assets/sprite.svg#arrow-down" />
-                </svg>
+            <div class="video-player-name hide-on-desktop">
+              <div class="video-player-title">
+                Dude You Re Getting A Telescope
+                <div class="channel-nav-item arrow-down">
+                  <svg
+                    class="subscribe-button"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="assets/sprite.svg#arrow-down" />
+                  </svg>
+                </div>
               </div>
-            </div>
 
-            <div class="video-player-subtitle">
-              <div class="views">123k views</div>
-              <div class="reactions">
-                <div class="reaction-box">
-                  <svg xmlns="http://www.w3.org/2000/svg">
-                    <use href="assets/sprite.svg#like" />
-                  </svg>
-                  123k
-                </div>
-                <div class="reaction-box">
-                  <svg
-                    class="reaction-dislike"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <use href="assets/sprite.svg#dislike" />
-                  </svg>
-                  435k
-                </div>
-                <div class="reaction-box">
-                  <svg
-                    class="svg-menu-container"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <use href="assets/sprite.svg#share" />
-                  </svg>
-                  Share
-                </div>
-                <div class="reaction-box-more hide-on-mobile">
-                  <svg xmlns="http://www.w3.org/2000/svg">
-                    <use href="assets/sprite.svg#more" />
-                  </svg>
+              <div class="video-player-subtitle">
+                <div class="views">123k views</div>
+                <div class="reactions">
+                  <div class="reaction-box">
+                    <svg xmlns="http://www.w3.org/2000/svg">
+                      <use href="assets/sprite.svg#like" />
+                    </svg>
+                    123k
+                  </div>
+                  <div class="reaction-box">
+                    <svg
+                      class="reaction-dislike"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <use href="assets/sprite.svg#dislike" />
+                    </svg>
+                    435k
+                  </div>
+                  <div class="reaction-box">
+                    <svg
+                      class="svg-menu-container"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <use href="assets/sprite.svg#share" />
+                    </svg>
+                    Share
+                  </div>
+                  <div class="reaction-box-more hide-on-mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg">
+                      <use href="assets/sprite.svg#more" />
+                    </svg>
+                  </div>
                 </div>
               </div>
             </div>
@@ -258,7 +269,7 @@
                 </div>
               </div>
             </div>
-            <div class="aside-item">
+            <div class="aside-item hide-on-mobile">
               <div class="video-container">
                 <img
                   src="assets/video-home-page/yellow-baby-monitor-technology.png"
@@ -275,7 +286,7 @@
                 </div>
               </div>
             </div>
-            <div class="aside-item">
+            <div class="aside-item hide-on-mobile">
               <div class="video-container">
                 <img
                   src="assets/video-home-page/a-good-autoresponder.png"
@@ -294,6 +305,49 @@
             </div>
           </div>
         </aside>
+        <div class="line"></div>
+        <div class="menu hide-on-desktop">
+          <div class="menu-top">
+            <div class="menu-item red-color-menu-item">
+              <svg
+                class="svg-menu-container"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="assets/sprite.svg#home" />
+              </svg>
+              Home
+            </div>
+            <div class="menu-item">
+              <svg
+                class="svg-menu-container"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="assets/sprite.svg#trending" />
+              </svg>
+              Trending
+            </div>
+            <div class="menu-item">
+              <svg
+                class="svg-menu-container"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="assets/sprite.svg#subscriptions" />
+              </svg>
+              Subscriptions
+            </div>
+          </div>
+          <div class="menu-rest">
+            <div class="menu-item">
+              <svg
+                class="svg-menu-container"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="assets/sprite.svg#library" />
+              </svg>
+              Library
+            </div>
+          </div>
+        </div>
       </main>
     </div>
   </body>
