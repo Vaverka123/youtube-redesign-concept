@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/channel.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
-    <title>Home Page</title>
+    <title>Channel Page</title>
   </head>
   <body>
     <div class="page-container">
@@ -21,13 +22,23 @@
             <span class="burger-line"></span>
             <span class="burger-line"></span>
           </div>
-          <picture>
+          <picture class="hide-on-mobile">
             <source
               media="(prefers-color-scheme: dark)"
               srcset="assets/logo-white.png"
             />
             <img src="assets/logo-black.png" alt="Youtube logo" />
           </picture>
+
+          <div class="mobile-general-header">
+            <img
+              class="youtube-shape"
+              src="assets/shape.png"
+              alt="Youtube logo"
+            />
+            <div class="shape-author">Margaret Phelps</div>
+          </div>
+
           <div class="search-container transparent-bgc">
             <input class="hide-on-mobile" type="text" placeholder="Search" />
             <div class="svg-container">
@@ -53,7 +64,16 @@
             </div>
           </div>
 
-          <img src="assets/img/userpic.png" alt="User picture" />
+          <img
+            class="hide-on-mobile"
+            src="assets/img/userpic.png"
+            alt="User picture"
+          />
+          <div class="combined-shape">
+            <div class="combined-part"></div>
+            <div class="combined-part"></div>
+            <div class="combined-part"></div>
+          </div>
         </div>
       </header>
       <main>
@@ -61,7 +81,7 @@
           <nav>
             <div class="menu">
               <div class="menu-top">
-                <div class="menu-item" style="color: #ff0000">
+                <div class="menu-item red-color-menu-item">
                   <svg
                     class="svg-menu-container"
                     xmlns="http://www.w3.org/2000/svg"
@@ -202,17 +222,137 @@
           </div>
         </aside>
         <div class="menu-separator"></div>
-        <div class="main-content">
+        <div class="channel-page-main-content">
+          <img
+            src="assets/video-home-page/channel-wallpaper.png"
+            alt="Channel wallpaper"
+            class="channel-wallpaper"
+          />
+          <div class="channel-header">
+            <div class="channel-titel">
+              <img
+                src="assets/img/nora.png"
+                alt="Channel Author"
+                class="channel-author"
+              />
+              <div class="channel-titel-name">
+                <h2>Margaret Phelps</h2>
+                <p class="video-description-details">245K subscribed</p>
+              </div>
+            </div>
+            <div class="chanel-titel-action">
+              <svg
+                class="channel-bell hide-on-mobile"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <use href="assets/sprite.svg#bell" />
+              </svg>
+              <svg class="subscribe-button" xmlns="http://www.w3.org/2000/svg">
+                <use href="assets/sprite.svg#subscribe-button" />
+              </svg>
+            </div>
+          </div>
+          <div class="channel-essence">
+            <div class="channel-essence-data">
+              <div class="channel-essence-nav">
+                <div class="channel-nav-item red-channel-nav-item">
+                  Home
+                  <div class="red-underline"></div>
+                </div>
+                <div class="channel-nav-item">Videos</div>
+                <div class="channel-nav-item">Playlists</div>
+                <div class="channel-nav-item arrow-down">
+                  <svg
+                    class="subscribe-button"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="assets/sprite.svg#arrow-down" />
+                  </svg>
+                </div>
+                <div class="channel-nav-item hide-on-mobile">Channels</div>
+                <div class="channel-nav-item hide-on-mobile">Discussion</div>
+                <div class="channel-nav-item hide-on-mobile">About</div>
+                <div class="channel-nav-item hide-on-mobile">
+                  <svg
+                    class="svg-menu-container"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <use href="assets/sprite.svg#search" />
+                  </svg>
+                </div>
+              </div>
+              <div class="channel-essence-content hide-on-mobile">
+                <div class="video-container hide-on-mobile">
+                  <img
+                    class="channel-essence-video"
+                    src="assets/video-home-page/choosing-the-best-audio.png"
+                    alt="Choosing The Best Audio Player Software For Your Computer"
+                  />
+                  <div class="timer">7:36</div>
+                </div>
+                <div class="channel-essence-video-description hide-on-mobile">
+                  <div class="video-description-title hide-on-mobile">
+                    Choosing The Best Audio Player
+                    <br />
+                    Software For Your Computer
+                  </div>
+                  <div
+                    class="channel-essence-video-description-details hide-on-mobile"
+                  >
+                    <p
+                      class="channel-essence-video-description-details-p hide-on-mobile"
+                    >
+                      Your cheap internet-based banner advertising will become
+                      one of the sought for ads there are. Today, the world of
+                      Internet advertising is rapidly evolving beyond banner ads
+                      and intrusive pop-ups. Bayles A common medium for
+                      advertising on the Internet is the use of banner ads.
+                    </p>
+                    <div
+                      class="video-description-details-with-a-dot hide-on-mobile"
+                    >
+                      <p>11k views</p>
+                      <p>·</p>
+                      <p>6 months ago</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="channel-essence-recommended hide-on-mobile">
+              <p class="details">Recommended channel</p>
+              <div class="channel-essence-recommended-channels">
+                <div class="channel-essence-recommended-channels-item">
+                  <img
+                    src="assets/img/flora-benson.png"
+                    alt="Flora Benson"
+                    class="recommended-author-img"
+                  />
+                  <p class="recommended-author">Flora Benson</p>
+                </div>
+                <div class="channel-essence-recommended-channels-item">
+                  <img
+                    src="assets/img/violet-cobb.png"
+                    alt="Violet Cobb"
+                    class="recommended-author-img"
+                  />
+                  <p class="recommended-author">Violet Cobb</p>
+                </div>
+                <div class="channel-essence-recommended-channels-item">
+                  <img
+                    src="assets/img/phillip-mullins.png"
+                    alt="Phillip Mullins"
+                    class="recommended-author-img"
+                  />
+                  <p class="recommended-author">Phillip Mullins</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="main-row">
             <div class="main-row-header hide-on-mobile">
-              <div class="main-row-title">
-                <img
-                  class="h2-img"
-                  src="assets/img/gus.png"
-                  alt="Dollie Blair"
-                />
-                <h2>Dollie Blair</h2>
-              </div>
+              <h2 class="main-row-title">Margaret Phelps videos</h2>
               <picture>
                 <source
                   media="(prefers-color-scheme: dark)"
@@ -228,262 +368,7 @@
                 <div class="video-container">
                   <img
                     class="first-main-row-video"
-                    src="assets/video-home-page/a-brief.png"
-                    alt="A Brief History Of Creation video"
-                  />
-                  <div class="timer">4:15</div>
-                </div>
-
-                <div class="video-description">
-                  <h4>A Brief History Of Creation</h4>
-                  <div class="video-description-details">
-                    <div class="video-description-details-with-a-dot">
-                      <p>80k views</p>
-                      <p>·</p>
-                      <p>3 days ago</p>
-                    </div>
-                    <p>Dollie Blair</p>
-                  </div>
-                </div>
-              </div>
-              <div class="main-row-item">
-                <div class="video-container">
-                  <img
-                    class="first-main-row-video"
-                    src="assets/video-home-page/selecting-the.png"
-                    alt="Selecting The Right Hotel"
-                  />
-                  <div class="timer">8:00</div>
-                </div>
-
-                <div class="video-description">
-                  <h4>Selecting The Right Hotel</h4>
-                  <div class="video-description-details">
-                    <div class="video-description-details-with-a-dot">
-                      <p>123k views</p>
-                      <p>·</p>
-                      <p>1 months ago</p>
-                    </div>
-                    <p>Dollie Blair</p>
-                  </div>
-                </div>
-              </div>
-              <div class="main-row-item">
-                <div class="video-container">
-                  <img
-                    class="first-main-row-video"
-                    src="assets/video-home-page/asteroids.png"
-                    alt="Asteroids"
-                  />
-                  <div class="timer">5:32</div>
-                </div>
-
-                <div class="video-description">
-                  <h4>Asteroids</h4>
-                  <div class="video-description-details">
-                    <div class="video-description-details-with-a-dot">
-                      <p>43k views</p>
-                      <p>·</p>
-                      <p>12 days ago</p>
-                    </div>
-                    <p>Dollie Blair</p>
-                  </div>
-                </div>
-              </div>
-              <div class="main-row-item">
-                <div class="video-container">
-                  <img
-                    class="first-main-row-video"
-                    src="assets/video-home-page/telescopes-101.png"
-                    alt="Telescopes 101"
-                  />
-                  <div class="timer">6:40</div>
-                </div>
-
-                <div class="video-description">
-                  <h4>Telescopes 101</h4>
-                  <div class="video-description-details">
-                    <div class="video-description-details-with-a-dot">
-                      <p>11k views</p>
-                      <p>·</p>
-                      <p>6 months ago</p>
-                    </div>
-                    <p>Dollie Blair</p>
-                  </div>
-                </div>
-              </div>
-              <div class="main-row-item hide-on-mobile">
-                <div class="video-container">
-                  <img
-                    class="first-main-row-video"
-                    src="assets/video-home-page/medical-care-is-just.png"
-                    alt="Medical Care Is Just"
-                  />
-                  <div class="timer">1:45</div>
-                </div>
-
-                <div class="video-description">
-                  <h4>Medical Care Is Just</h4>
-                  <div class="video-description-details">
-                    <div class="video-description-details-with-a-dot">
-                      <p>18k views</p>
-                      <p>·</p>
-                      <p>2 days ago</p>
-                    </div>
-                    <p>Dollie Blair</p>
-                  </div>
-                </div>
-              </div>
-              <div class="main-row-item hide-on-mobile">
-                <div class="video-container">
-                  <img
-                    class="first-main-row-video"
-                    src="assets/video-home-page/moon-gazing.png"
-                    alt="Moon Gazing"
-                  />
-                  <div class="timer">2:12</div>
-                </div>
-
-                <div class="video-description">
-                  <h4>Moon Gazing</h4>
-                  <div class="video-description-details">
-                    <div class="video-description-details-with-a-dot">
-                      <p>67k views</p>
-                      <p>·</p>
-                      <p>4 months ago</p>
-                    </div>
-                    <p>Dollie Blair</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="main-row middle-row hide-on-mobile">
-            <div class="main-row-header">
-              <h2 class="main-row-title">Recommended</h2>
-              <picture>
-                <source
-                  media="(prefers-color-scheme: dark)"
-                  srcset="assets/sprite.svg#arrows-dark"
-                />
-                <svg
-                  class="arrows arrows-middle-row"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <use href="assets/sprite.svg#arrows" />
-                </svg>
-              </picture>
-            </div>
-            <div class="main-row-content">
-              <div class="main-row-item">
-                <div class="video-container">
-                  <img
-                    class="second-main-row-video"
-                    src="assets/video-home-page/dude-you-re-getting-a-telescope.png"
-                    alt="Dude You Re Getting A Telescope"
-                  />
-                  <div class="timer">3:40</div>
-                </div>
-
-                <div class="video-description">
-                  <h4>Dude You Re Getting A Telescope</h4>
-                  <div class="video-description-details">
-                    <div
-                      class="video-description-details-with-a-dot video-description-details-with-a-dot-middle-row"
-                    >
-                      <p>34k views</p>
-                      <p>·</p>
-                      <p>5 months ago</p>
-                    </div>
-                    <p>Gussie French</p>
-                  </div>
-                </div>
-              </div>
-              <div class="main-row-item">
-                <div class="video-container">
-                  <img
-                    class="second-main-row-video"
-                    src="assets/video-home-page/2nd-moon-gazing.png"
-                    alt="Moon Gazing"
-                  />
-                  <div class="timer">2:12</div>
-                </div>
-
-                <div class="video-description">
-                  <h4>Moon Gazing</h4>
-                  <div class="video-description-details">
-                    <div
-                      class="video-description-details-with-a-dot video-description-details-with-a-dot-middle-row"
-                    >
-                      <p>54k views</p>
-                      <p>·</p>
-                      <p>11 months ago</p>
-                    </div>
-                    <p>Edward Osborne</p>
-                  </div>
-                </div>
-              </div>
-              <div class="main-row-item">
-                <div class="video-container">
-                  <img
-                    class="second-main-row-video"
-                    src="assets/video-home-page/rose-moon-gazing.png"
-                    alt="Moon Gazing"
-                  />
-                  <div class="timer">2:12</div>
-                </div>
-
-                <div class="video-description">
-                  <h4>Moon Gazing</h4>
-                  <div class="video-description-details">
-                    <div
-                      class="video-description-details-with-a-dot video-description-details-with-a-dot-middle-row"
-                    >
-                      <p>125k views</p>
-                      <p>·</p>
-                      <p>4 months ago</p>
-                    </div>
-                    <p>Dollie Blair</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="main-row third-row hide-on-mobile">
-            <div class="main-row-header">
-              <div class="main-row-title">
-                <img
-                  class="h2-img"
-                  src="assets/img/food-and-drink.png"
-                  alt="Food and Drink"
-                />
-                <h2>Food & Drink</h2>
-                <p class="details">Recommended channel for you</p>
-              </div>
-              <div class="main-row-nav">
-                <svg
-                  class="subscribe-button"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <use href="assets/sprite.svg#subscribe-button" />
-                </svg>
-                <picture>
-                  <source
-                    media="(prefers-color-scheme: dark)"
-                    srcset="assets/sprite.svg#arrows-dark"
-                  />
-                  <svg class="arrows" xmlns="http://www.w3.org/2000/svg">
-                    <use href="assets/sprite.svg#arrows" />
-                  </svg>
-                </picture>
-              </div>
-            </div>
-            <div class="main-row-content">
-              <div class="main-row-item">
-                <div class="video-container">
-                  <img
-                    class="first-main-row-video"
-                    src="assets/video-home-page/astronomy-or-astrology.png"
+                    src="assets/video-home-page/pink-astronomy-or-astrology.png"
                     alt="Astronomy Or Astrology"
                   />
                   <div class="timer">7:36</div>
@@ -505,7 +390,7 @@
                 <div class="video-container">
                   <img
                     class="first-main-row-video"
-                    src="assets/video-home-page/advertising-outdoors.png"
+                    src="assets/video-home-page/blue-advertising-outdoors.png"
                     alt="Advertising Outdoors"
                   />
                   <div class="timer">2:19</div>
@@ -527,7 +412,7 @@
                 <div class="video-container">
                   <img
                     class="first-main-row-video"
-                    src="assets/video-home-page/radio-astronomy.png"
+                    src="assets/video-home-page/purple-radio-astronomy.png"
                     alt="Radio Astronomy"
                   />
                   <div class="timer">9:05</div>
@@ -545,11 +430,11 @@
                   </div>
                 </div>
               </div>
-              <div class="main-row-item">
+              <div class="main-row-item hide-on-mobile">
                 <div class="video-container">
                   <img
                     class="first-main-row-video"
-                    src="assets/video-home-page/a-good-autoresponder.png"
+                    src="assets/video-home-page/watermelon-asteroids.png"
                     alt="A Good Autoresponder"
                   />
                   <div class="timer">3:40</div>
@@ -567,11 +452,11 @@
                   </div>
                 </div>
               </div>
-              <div class="main-row-item">
+              <div class="main-row-item hide-on-mobile">
                 <div class="video-container">
                   <img
                     class="first-main-row-video"
-                    src="assets/video-home-page/baby-monitor-technology.png"
+                    src="assets/video-home-page/yellow-baby-monitor-technology.png"
                     alt="Baby Monitor Technology"
                   />
                   <div class="timer">1:56</div>
@@ -589,11 +474,11 @@
                   </div>
                 </div>
               </div>
-              <div class="main-row-item">
+              <div class="main-row-item hide-on-mobile">
                 <div class="video-container">
                   <img
                     class="first-main-row-video"
-                    src="assets/video-home-page/watermelon-asteroids.png"
+                    src="assets/video-home-page/sausage-asteroids.png"
                     alt="Asteroids"
                   />
                   <div class="timer">4:15</div>
