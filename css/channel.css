@@ -16,8 +16,6 @@
 }
 
 .channel-wallpaper {
-  /* width: 100%;
-  max-width: 1595px; */
   width: 1595px;
   height: 280px;
   border-radius: 14px;
@@ -25,7 +23,6 @@
 }
 
 .channel-header {
-  /* position: absolute; */
   margin-top: 27px;
   width: 100%;
   max-width: 1595px;

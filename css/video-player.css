@@ -1,3 +1,11 @@
+header {
+  margin-left: 30px;
+}
+
+.header-general-container {
+  max-width: 1026px;
+}
+
 .hide-on-desktop,
 .subscribe-mobile {
   display: none;
@@ -8,7 +16,7 @@
 }
 
 .search-container {
-  padding-right: 45px;
+  padding-right: 18px;
 }
 
 .header-icons-container {
@@ -60,14 +68,7 @@ main {
   row-gap: 12px;
 }
 
-/* .timer-container {
-  position: relative;
-  bottom: 47px;
-  width: 1298px;
-} */
-
 .video-player-timer {
-  /* position: absolute; */
   font-family: Mulish;
   font-size: 22px;
   font-weight: 400;
@@ -108,16 +109,7 @@ main {
   background: rgba(255, 0, 0, 1);
 }
 
-/* .video-player-controls {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  top: 21px;
-} */
-
 .video-player-buttons {
-  /* position: absolute; */
-
   margin-left: 10px;
   grid-area: controls;
   left: 10px;
@@ -143,8 +135,6 @@ main {
 }
 
 .volume-container {
-  /* margin-left: -20px; */
-  /* position: relative; */
   width: 86px;
   height: 8px;
   border-radius: 4px;
@@ -152,7 +142,6 @@ main {
 }
 
 .volume-level {
-  /* position: absolute; */
   left: 0;
   width: 36px;
   height: 8px;
@@ -161,7 +150,6 @@ main {
 }
 
 .youtube-buttons {
-  /* position: absolute; */
   grid-area: settings;
 
   display: flex;
@@ -226,7 +214,6 @@ main {
 }
 
 .reactions {
-  /* margin-top: -13px; */
   display: flex;
   align-items: center;
   gap: 10px;
@@ -276,7 +263,6 @@ main {
 }
 
 .video-player-description {
-  /* margin-left: -5px; */
   display: flex;
   justify-content: space-between;
 }
@@ -389,7 +375,6 @@ aside {
 }
 
 .aside-item {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   gap: 11px;
@@ -515,8 +500,6 @@ aside {
   }
 
   .progress-bar-container {
-    /* top: 13px;
-    left: 72px; */
     max-width: 156px;
     height: 5px;
     border-radius: 2.5px;
@@ -528,12 +511,6 @@ aside {
     height: 5px;
     border-radius: 2.5px;
   }
-
-  /* .timer-container {
-    width: 221px;
-    left: 45px;
-    bottom: -9px;
-  } */
 
   .speaker,
   .pause {
@@ -573,11 +550,7 @@ aside {
   }
 
   .video-player-subtitle {
-    /* margin-top: 2px;
-    margin-left: 16px;
-    margin-bottom: 30px; */
     flex-direction: column;
-    /* gap: 34px; */
   }
 
   .views {

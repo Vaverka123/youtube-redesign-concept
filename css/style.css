@@ -43,7 +43,6 @@ body {
   margin: 0;
   background-color: var(--page-background-color);
   width: 100%;
-  /* overflow-x: hidden; */
 }
 
 body * {
@@ -51,14 +50,13 @@ body * {
 }
 
 .page-container {
-  /* margin: 0 auto; */
   padding: 20px 0 40px 30px;
   max-width: 1920px;
   width: 100%;
 }
 
 header {
-  margin-left: 30px;
+  margin-left: 0;
   margin-right: 70px;
   display: flex;
   justify-content: space-between;
@@ -160,16 +158,6 @@ input {
   gap: 50px;
 }
 
-/* .user-icons {
-  width: 176px;
-  height: 34px;
-  stroke: var(--icon-fill);
-} */
-
-/* .user-icons use {
-  stroke: var(--icon-fill);
-}
-*/
 .header-icons-container svg use {
   fill: var(--icon-fill);
 }
